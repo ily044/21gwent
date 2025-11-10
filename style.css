@@ -1,0 +1,111 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "MedievalSharp", cursive;
+  min-height: 100%;
+  background-image: url("photo/back.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  color: #f5e6ca;
+  text-shadow: 2px 2px 6px black;
+}
+
+#main {
+  padding-bottom: 30px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  font-family: "MedievalSharp", cursive;
+  color: #f5e6ca;
+  display: block;
+  margin: 0 auto;
+  width: 45vw;
+  height: 80px;
+  font-size: 2vw;
+  border-radius: 20px;
+  border: 2px solid #d4af37;
+  background: linear-gradient(145deg, #4b1f1f, #742d2d);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+  margin-top: 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #742d2d, #a83636);
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.5);
+}
+
+button:active {
+  transform: scale(0.97);
+  background: linear-gradient(145deg, #3a0d0d, #742d2d);
+}
+
+p {	
+  text-align: center;
+  font-size: 2.2vw;
+  width: 70vw;
+  color: #f5e6ca;
+  margin: 10px;
+  text-shadow: 2px 2px 6px black;
+}
+
+.contain {
+  border-radius: 25px;
+  justify-content: center;
+  margin: 0;
+  background: rgba(30, 20, 10, 0.8);
+  backdrop-filter: blur(3px);
+  flex-direction: column;
+  width: 70%;
+  border: 2px solid #d4af37;
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+}
+
+.contain2 {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.userComputer {
+  font-size: 2vw;
+  color: #f5e6ca;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  background-size: 14.2vw 20vw;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 21vw;
+  height: 27vw;
+  border: 2px solid #d4af37;
+  box-shadow: 0 0 45px 20px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.anim {
+  animation: shake 0.4s;
+}
+
+@keyframes shake {
+  0%   { transform: translateX(0); box-shadow: 0 0 40px 10px #d4af37; }
+  20%  { transform: translateX(-25px); box-shadow: 0 0 50px 15px #ffcc00; }
+  40%  { transform: translateX(25px); box-shadow: 0 0 60px 20px #ffcc00; }
+  60%  { transform: translateX(-25px); box-shadow: 0 0 60px 20px #ffcc00; }
+  80%  { transform: translateX(25px); box-shadow: 0 0 50px 15px #ffcc00; }
+  100% { transform: translateX(0); box-shadow: 0 0 40px 10px #d4af37; }
+}
